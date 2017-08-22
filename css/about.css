@@ -186,6 +186,39 @@ li{list-style: none;}
   color: white;
   font-weight: 100;
 }
+/*第三版*/
+.myskill{
+  width: 950;
+  height: 700px;
+  position: relative;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.myskill ul{
+  width: 600px;
+  height: 100%;
+  color: white;
+  font-family: " Microsoft YaHei";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin:0 auto;
+  margin-top: 50px;
+
+  }
+.myskill ul li{
+  float: left;
+  width: 600px;
+  height: 150px;
+  margin-top: 50px;
+
+}
+.myskill ul li>h3{
+  text-align: center;
+  cursor: pointer;
+}
 /* 版心 */
 .container {
   padding-right: 15px;
