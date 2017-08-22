@@ -4,6 +4,7 @@ body,html,ul,li{
   font-family: 微软雅黑, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 p{cursor: pointer;}
+li{list-style: none;}
 //背景
 #all{
   position: fixed;
@@ -133,7 +134,58 @@ p{cursor: pointer;}
   left:240px;
   top:-25px;
 }
+/*第二版*/
+.myData{
+  width: 950px;
+  height:650px;
+  position: relative;
+  top: 10%;
+  left: 0;
+   right: 0;
+   margin: 0 auto;
+}
+.myData .myData-icon{
+  width: 800px;
+  height: 650px;
+   position: absolute;
+   top: 30%;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+   display: flex;
+   justify-content:space-between;
+}
+.myData .myData-icon li{
+  float: left;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  cursor: pointer;
 
+}
+.myData .myData-icon li>img{
+  width: 150px;height: 150px;
+}
+.myData .myData-icon li>span{
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  font-family: "微软雅黑";
+  font-size: 20px;
+}
+.myData-my{
+  width: 500px;
+  text-align: center;
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-family: 微软雅黑, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: 100;
+}
 /* 版心 */
 .container {
   padding-right: 15px;
