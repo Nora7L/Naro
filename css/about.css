@@ -343,15 +343,27 @@ li{list-style: none;}
   }
 }
 
-@media  (min-width: 780px){
+@media  (min-width: 780px) and (max-width: 991px){
  .container {
     width: 750px;
   }
+  .myData {
+    width: 700px;
+  }
+  .myData .myData-icon {
+    width: 600px;
+  }
 
 }
-@media (min-width: 992px){
+@media (min-width: 992px) and (max-width: 1199px) {
   .container {
     width: 970px;
+  }
+  .myData {
+    width: 800px;
+  }
+  .myData .myData-icon {
+    width: 700px;
   }
 
 }
