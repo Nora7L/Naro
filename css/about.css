@@ -1,8 +1,7 @@
-body,html,ul,li{
-  margin: 0;
-  padding: 0;
-  font-family: 微软雅黑, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+li{
+font-family: 微软雅黑, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
 p{cursor: pointer;}
 li{list-style: none;}
 //背景
@@ -177,7 +176,7 @@ li{list-style: none;}
   width: 500px;
   text-align: center;
   position: absolute;
-  bottom: 20%;
+  bottom: 23%;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -189,35 +188,96 @@ li{list-style: none;}
 /*第三版*/
 .myskill{
   width: 950;
-  height: 700px;
+  height: 650px;
   position: relative;
   bottom: 10%;
   left: 0;
   right: 0;
   margin: 0 auto;
 }
-.myskill ul{
-  width: 600px;
-  height: 100%;
-  color: white;
-  font-family: " Microsoft YaHei";
+.myskill>ul{
+  width: 70%;
   position: absolute;
+  top: 15%;
   left: 0;
   right: 0;
-  margin:0 auto;
-  margin-top: 50px;
-
-  }
-.myskill ul li{
-  float: left;
-  width: 600px;
-  height: 150px;
-  margin-top: 50px;
-
+  margin: 0 auto;
 }
-.myskill ul li>h3{
-  text-align: center;
-  cursor: pointer;
+.myskill>ul>li{
+  margin-top: 20px;
+}
+.myskill>ul>li>h4{
+   height: 40px;
+   line-height: 40px;
+   cursor: pointer;
+   padding-left: 5px;
+  border-left: 3px solid ;
+  overflow: hidden;
+}
+.HaC{
+  border-color: #3498db;
+  background-color: #d6efff;
+  color: #2a7da9;
+    width: 10%;
+}
+.JaJ{
+  width: 10%;
+  border-color: #3498db;
+  background-color: #d6efff;
+  color: #2a7da9;
+}
+.KaJ{
+  width: 10%;
+  background-color: #eaf6d0;
+  border-color: #80bd01;
+  color: #6e9c0f;
+}
+.PS{
+  width: 10%;
+  background-color: #eaf6d0;
+  border-color: #80bd01;
+  color: #6e9c0f; 
+}
+.HD{
+  width: 10%;
+  background-color: #fff6dd;
+  border-color: #fdbc40;
+  color: #ff742a;
+}
+@keyframes HD {
+  0% { width: 10%; }
+  100% { width: 30%; }
+}
+@keyframes PS {
+  0% { width: 10%; }
+  100% { width: 50%; }
+}
+@keyframes KJ {
+  0% { width: 10%; }
+  100% { width: 60%; }
+}
+@keyframes JJ {
+  0% { width: 10%; }
+  100% { width: 80%; }
+}
+@keyframes HC {
+  0% { width: 10%; }
+  100% { width: 100%; }
+}
+.myskill-content {
+    display:none;
+    position: absolute;
+    left: 250px;
+    z-index: 9999;
+    max-width: 400px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+.skill-detail-block {
+    
+    display:block;
 }
 /* 版心 */
 .container {
@@ -229,6 +289,32 @@ li{list-style: none;}
 }
 
 @media (max-width: 779px){
+  .myskill>ul>li{
+  margin-bottom: 40px;
+}
+  .myData{
+    width: 400px;
+  }
+  .myData .myData-icon {
+    width: 300px;
+    height: 550px;
+    top: 20%;
+  }
+  .myData .myData-icon li {
+    width: 60px;
+    height: 60px;
+}
+.myData .myData-icon li>img {
+    width: 60px;
+    height: 60px;
+}
+.myData .myData-icon li>span{
+  width: 60px;
+  font-size: 12px;
+}
+.myData-my {
+    width: 300px
+}
   .about-me {
     width: 300px;
     background-color:transparent;

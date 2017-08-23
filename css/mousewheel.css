@@ -1,4 +1,4 @@
-html,body{margin: 0;padding: 0;width: 100%;height: 100%;overflow: hidden;}
+body,html{margin: 0;padding: 0;width: 100%;height: 100%;overflow: hidden;}
 .section-wrap{
 	width:100%; 
 	height:100%; 
@@ -130,22 +130,22 @@ transition:all 2s cubic-bezier(0.5,0,0.9,1);
     -o-animation-play-state:paused;
 }
 @keyframes go-btn{
-%0,%100{bottom:10px; opacity:1;}
-50%{bottom:50px; opacity:.5}
+%0,%100{bottom:5px; opacity:1;}
+50%{bottom:25px; opacity:.5}
     }
 @-webkit-keyframes go-btn{
-%0,%100{bottom:10px; opacity:1;}
-50%{bottom:50px; opacity:.5}
+%0,%100{bottom:5px; opacity:1;}
+50%{bottom:25px; opacity:.5}
     }
 @-ms-keyframes go-btn{
-%0,%100{bottom:10px; opacity:1;}
-50%{bottom:50px; opacity:.5}
+%0,%100{bottom:5px; opacity:1;}
+50%{bottom:25px; opacity:.5}
     }
 @-moz-keyframes go-btn{
-%0,%100{bottom:10px; opacity:1;}
-50%{bottom:50px; opacity:.5}
+%0,%100{bottom:5px; opacity:1;}
+50%{bottom:25px; opacity:.5}
     }
 @-o-keyframes go-btn{
-%0,%100{bottom:10px; opacity:1;}
-50%{bottom:50px; opacity:.5}
+%0,%100{bottom:5px; opacity:1;}
+50%{bottom:25px; opacity:.5}
     }
