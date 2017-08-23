@@ -81,3 +81,28 @@ var contactTimer2;
 
 });
 
+/*pdf*/
+$(document).ready(function(){
+  var x=15,y=15;
+  $('#contact ul li a').mouseenter(function(ev){
+    this.myTitle=this.title;
+    this.title='';
+    var $pdf=$('<div id="pdf">'+this.myTitle+'</div>');
+    $('body').append($pdf);
+    $('#pdf').css({
+          'display':'block',
+          'left':ev.pageX+x+"px",
+          'top':ev.pageY+y+"px"
+         })
+    })
+  .mousemove(function(ev){
+            $('#pdf').css({
+          'left':ev.pageX+x+"px",
+          'top':ev.pageY+y+"px"
+          })
+         })
+  .mouseleave(function(){
+      $('#pdf').remove();
+      this.title=this.myTitle;
+    })
+ })
