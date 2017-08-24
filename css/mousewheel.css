@@ -17,11 +17,11 @@ body,html{margin: 0;padding: 0;width: 100%;height: 100%;overflow: hidden;}
 	background-repeat:no-repeat;
 }
 
-.section-wrap .section-1{background-image:repeating-linear-gradient(90deg,rgba(5,61,117,.8),rgb(225,226,189));}
-.section-wrap .section-2{ background-image:repeating-linear-gradient(90deg,rgba(5,61,117,.8),#a1c4fd);}
+.section-wrap .section-1{ background-color:rgba(42,106,109,.5);}
+.section-wrap .section-2{ background-color:#22c3aa;}
 .section-wrap .section-3{ background-image:repeating-linear-gradient(90deg,#ff9a9e,#764ba2);}
-.section-wrap .section-4{ background-image:repeating-linear-gradient(90deg,#667eea,#764ba2);}
-.section-wrap .section-5{ background-color:#867892;}
+.section-wrap .section-4{ background-color:#d57744;}
+.section-wrap .section-5{ background-color:#19B1E0;}
 .put-section-0{
 transform:translateY(0);
 -webkit-transform:translateY(0);
