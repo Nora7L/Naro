@@ -12,12 +12,15 @@
 	<link rel="stylesheet" type="text/css" href="css/mousewheel.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/other.css">	
+	<link rel="stylesheet" type="text/css" href="swiper/swiper-3.4.2.min.css">	
 	<!-- 库 -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/mousewheel.js"></script>
     <!-- My js -->
 	<script src="js/index.js"></script>
 	<script src="js/mouse.js"></script>
+	<script src="swiper/swiper-3.4.2.jquery.min.js"></script>
+
 </head>
 <body>
 <!--loading动画-->
@@ -64,202 +67,246 @@
 		<img src="images/IMG_8088.JPG">
 	</div>
 </div>
-<div class="section-wrap ">
-	<div class="section section-1 ">
-		<!-- 第一版：介绍 -->
-		<div id="all">
-			<!-- 鼠标效果 -->
-			<canvas id="canvas" width="1440" height="150"></canvas>
-			<div class="about-bg"></div>
-			<div class="container">
-				<!-- 头像 -->
-				<div class="top1">
-					<h3>欢迎你</h3>
+<canvas id="canvas" width="100%" height="100%"></canvas>
+<div class="swiper-container">
+	<div class="section-wrap swiper-wrapper">
+		<div class="section section-1 swiper-slide">
+			<!-- 第一版：介绍 -->
+			<div id="all">
+				<!-- 鼠标效果 -->
+				
+				<div class="about-bg">
 				</div>
-				<div class="about-me">
-					<div class="about-title">
-						<div class="about-yy">
-							<img src="images/IMG_8033.jpg">
-							<!-- <h3>Naro的个人简历</h3> -->
-							<div class="mask" id="mask"></div>
-							<!-- 遮罩 -->
-							<!-- <div class="mask2" id="mask2"></div> -->
-						</div>
-						<!-- 信息 -->
-						<div class="about-xx">
-							在大学学习了前端方面的知识，使我确定了未来前进的方向。致力于成为一名优秀的前端工程师！
-						</div>
-						<div class="about-xx2">
-							<p>嗨！</p>
-							<p>我是刘蕾(@Naro)</p>
-							<p>一名前端web工程师</p>
-							<p>Naro7L@163.com</p>
+				<div class="container">
+					<!-- 头像 -->
+					<div class="top1">
+						<h3>欢迎你</h3>
+					</div>
+					<div class="about-me">
+						<div class="about-title">
+							<div class="about-yy">
+								<img src="images/IMG_8033.jpg">
+								<!-- <h3>Naro的个人简历</h3> -->
+								<div class="mask" id="mask"></div>
+								<!-- 遮罩 -->
+								<!-- <div class="mask2" id="mask2"></div> -->
+							</div>
+							<!-- 信息 -->
+							<div class="about-xx">
+								在大学学习了前端方面的知识，使我确定了未来前进的方向。致力于成为一名优秀的前端工程师！
+							</div>
+							<div class="about-xx2">
+								<p>嗨！</p>
+								<p>我是刘蕾(@Naro)</p>
+								<p>一名前端web工程师</p>
+								<p>Naro7L@163.com</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="section section-2 ">			
-		<div class="container">
-			<div class="myData">
-				<div class="top1">
-					<h3>关于我</h3>
-				</div>
-				<div class="myData-move">
-					<img src="images/xinxi02.png">
-				</div>
-				<ul class="myData-icon">
-					<li>
-						<img src="images/xinxi01.png">
-						<span>年龄/22</span>
-					</li>
-					<li>
+		<div class="section section-2 swiper-slide">		
+			<div class="container">
+				<div class="myData">
+					<div class="top1">
+						<h3>关于我</h3>
+					</div>
+					<div class="myData-move">
 						<img src="images/xinxi02.png">
-						<span>信息工程</span>
-					</li>
-					<li>
-						<img src="images/xinxi03.png">
-						<span>学历/本科</span>
-					</li>
-					<li>
-						<img src="images/xinxi04.png">
-						<span>坐标/北京</span>
-					</li>
-				</ul>
-				
-				<div class="myData-my">
-					我具有良好的<span>学习能力</span>。<br>喜欢<span>简单</span>直接的交流方式。<br>富有<span>团队精神</span>，擅于团队配合，发挥团队优势。<br>有积极向上的学习精神，对自身工作能力有信心。<br>快到我的碗里来~~！</div>
-				</div>
-			</div>
-	</div>
-		<div class="section section-3">
-			<div class="container">
-			  <div class="myskill">
-				<div class="top1">
-					<h3>技能栈</h3>
-				</div>
-                <ul>
-                	<li >
-                		<h4 class="HaC"> HTML&amp;CSS </h4>
-                		
-                	</li>
-                	<li>
-                		<h4  class="JaJ"> Javascript&amp;jQuery</h4>
-                		
-                	</li>
-                	<li >
-                		<h4 class="KaJ">框架&amp;工具</h4>
-                		
-                	</li>
-                	<li >
-                		<h4 class="PS">Photoshop</h4>
-                		
-                	</li>
-                	<li >
-                		<h4 class="HD">后端</h4>
-                		
-                	</li>
-                </ul>
-
-                <div class="myskill-con">
-                <div class="myskill-content skill-detail-block headingWrapper color-bright" >
-                	<span class="header header--pushDown header--shadow">Please click on my skill bar!</span>
-                </div>
-                <div class="myskill-content ">
-                			<ul class="diff1">
-                			<li> HTML&amp;CSS </li>
-                				<li>1. 精通HTML和CSS制作标准页面，编写语义化的代码，完成较复杂的布局</li>
-                				<li>2. 熟悉HTML5+CSS3新加的特性，可以编写大部分动画特效</li>
-                				<li>3. 对常用浏览器兼容性有一定的了解</li>
-                			</ul>
-                		</div>
-                <div class="myskill-content">
-                		<ul class="diff1">
-                		<li> Javascript&amp;jQuery </li>
-                			<li>1. 熟悉原生JS，有JS面向对象编程思想</li>
-                			<li>2. 熟练使用jQuery,编写实现常见效果</li>
-                			<li>3. 能不依赖库手写tab切换、瀑布流、轮播等效果</li>
-                		</ul>
-                		</div>
-                <div class="myskill-content">
-                		<ul class="diff1">
-                		<li> 框架&amp;工具 </li>
-                			<li>1. 熟练使用Sublime、Git、WebStorm等开发工具</li>
-                			<li>2. 熟悉require.js等前端构建工具，打包代码和实现代码的模块化</li>
-                			<li>3. 了解bootStrap的基本用法有一定的使用经验，能够用bootstap 搭建网站</li>
-                		</ul>
-                		</div>
-                <div class="myskill-content">
-                		<ul class="diff1">
-                		<li> Photoshop </li>
-                			<li>1. 能进行简单的图片处理和平面设计</li>
-                			<li>2. 能根据图片特征存成最优的格式</li>
-                		</ul>
-                		</div>
-                <div class="myskill-content">
-                			<ul class="diff1">
-                			<li> 后端 </li>
-                				<li>1</li>
-                				<li>2</li>
-                				<li>3</li>
-                			</ul>
-                		</div>
-                </div>
-				</div>
-			</div>
-		</div>
-		<div class="section section-4 ">
-			<div class="container">
-				<div class="top1">
-					<h3>项目经验</h3>
-				</div>
-				<div class="item-content">
-					<ul class="item-content-items">
+					</div>
+					<ul class="myData-icon">
 						<li>
-							<h3>仿网易云课堂--毕设</h3>
-							<span>在整个项目中我负责首页的设计与实现，也是通过这个项目我学习到了...，过程中遇到了...问题，好在通过..解决了，也使我学习到了更多的知识。最后实现了网站的...。,增强了我的团队合作意识，受益匪浅！</span>
+							<img src="images/xinxi01.png">
+							<span>年龄/22</span>
 						</li>
 						<li>
-							<h3>独立完成小游戏--俄罗斯方块</h3>
-							<span>这个游戏主要实现了..几个功能以及外观优化设计，在过程中遇到了几个思维性的问题，通过自己探索，查找资料，在论坛上提问，最终解决了这些问题！游戏虽小，却很适合用来练手！</span>
+							<img src="images/xinxi02.png">
+							<span>信息工程</span>
 						</li>
 						<li>
-							<h3>博客</h3>
-							<span>因为之前有过和同学组团搭建博客的经验，这次的的搭建我更加注重...，我因为..选择了使用...，实现了...，非常便于我的日常维护</span>
+							<img src="images/xinxi03.png">
+							<span>学历/本科</span>
 						</li>
 						<li>
-							<h3>美食网站</h3>
-							<span>我做了 XX 项目重构，用了 XX 技术方案，克服了 XX 的困难，最终让 XX 这类需求变更可以短平快的被消化，极速研发、快速上线、且数据采集也做到了标准化，研发成本大大降低，数据积累增长迅速，比如 XX ，最后在 XX 产品线中开始推广。</span>
+							<img src="images/xinxi04.png">
+							<span>坐标/北京</span>
 						</li>
 					</ul>
+
+					<div class="myData-my">
+						我具有良好的<span>学习能力</span>。<br>喜欢<span>简单</span>直接的交流方式。<br>富有<span>团队精神</span>，擅于团队配合，发挥团队优势。<br>有积极向上的学习精神，对自身工作能力有信心。<br>快到我的碗里来~~！</div>
+					</div>
 				</div>
-			</div>
 		</div>
-		<div class="section section-5">
-			<div class="container">
-			  <div class="callMe">
-				
-				<span>联系方式/社交账号</span>
-				<ul>
-					<li>QQ：752465049</li>
-					<li>邮箱：752465049@qq.com</li>
-					<li>电话：17611005722</li>
-				</ul>
-			 </div>
-			</div>
+		<div class="section section-3 swiper-slide">
+				<div class="container">
+					<div class="myskill">
+						<div class="top1">
+							<h3>技能栈</h3>
+						</div>
+						<ul>
+							<li >
+								<h4 class="HaC"> HTML&amp;CSS </h4>
+
+							</li>
+							<li>
+								<h4  class="JaJ"> Javascript&amp;jQuery</h4>
+
+							</li>
+							<li >
+								<h4 class="KaJ">框架&amp;工具</h4>
+
+							</li>
+							<li >
+								<h4 class="PS">Photoshop</h4>
+
+							</li>
+							<li >
+								<h4 class="HD">后端</h4>
+
+							</li>
+						</ul>
+
+						<div class="myskill-con">
+							<div class="myskill-content skill-detail-block headingWrapper color-bright" >
+								<span class="header header--pushDown header--shadow">Please click on my skill bar!</span>
+							</div>
+							<div class="myskill-content ">
+								<ul class="diff1">
+									<li> HTML&amp;CSS </li>
+									<li>1. 精通HTML和CSS制作标准页面，编写语义化的代码，完成较复杂的布局</li>
+									<li>2. 熟悉HTML5+CSS3新加的特性，可以编写大部分动画特效</li>
+									<li>3. 对常用浏览器兼容性有一定的了解</li>
+								</ul>
+							</div>
+							<div class="myskill-content">
+								<ul class="diff1">
+									<li> Javascript&amp;jQuery </li>
+									<li>1. 熟悉原生JS，有JS面向对象编程思想</li>
+									<li>2. 熟练使用jQuery,编写实现常见效果</li>
+									<li>3. 能不依赖库手写tab切换、瀑布流、轮播等效果</li>
+								</ul>
+							</div>
+							<div class="myskill-content">
+								<ul class="diff1">
+									<li> 框架&amp;工具 </li>
+									<li>1. 熟练使用Sublime、Git、WebStorm等开发工具</li>
+									<li>2. 熟悉require.js等前端构建工具，打包代码和实现代码的模块化</li>
+									<li>3. 了解bootStrap的基本用法有一定的使用经验，能够用bootstap 搭建网站</li>
+								</ul>
+							</div>
+							<div class="myskill-content">
+								<ul class="diff1">
+									<li> Photoshop </li>
+									<li>1. 能进行简单的图片处理和平面设计</li>
+									<li>2. 能根据图片特征存成最优的格式</li>
+								</ul>
+							</div>
+							<div class="myskill-content">
+								<ul class="diff1">
+									<li> 后端 </li>
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="section section-4 swiper-slide">
+				<div class="container">
+					<div class="top1">
+						<h3>项目经验</h3>
+					</div>
+					<div class="item-content">
+						<ul class="item-content-items">
+							<li>
+							<div class="item-content-itemA">
+								
+								<div class="item-content-items-img">
+								<div class="item-content-items-mask2"></div>
+								<img src="images/a1.JPG">
+								</div>
+								<div class="item-content-items-sp">
+								<h3>网易云课堂</h3>
+								<span class="item-content-items-sp-no">在整个项目中我负责首页的设计与实现，也是通过这个项目我学习到了...，过程中遇到了...问题，好在通过..解决了，也使我学习到了更多的知识。最后实现了网站的...。,增强了我的团队合作意识，受益匪浅！</span>
+								</div>
+								</div>
+							</li>
+							<li>
+							<div class="item-content-itemA">
+							    
+							    <div class="item-content-items-img">
+								<div class="item-content-items-mask2"></div>
+							    
+								<img src="images/a2.JPG">
+								</div>
+								<div class="item-content-items-sp">
+								<h3>俄罗斯方块</h3>
+								<span>这个游戏主要实现了..几个功能以及外观优化设计，在过程中遇到了几个思维性的问题，通过自己探索，查找资料，在论坛上提问，最终解决了这些问题！游戏虽小，却很适合用来练手！</span>
+								</div>
+								</div>
+							</li>
+							<li>
+							<div class="item-content-itemA">
+							    
+							    <div class="item-content-items-img">
+								<div class="item-content-items-mask2"></div>
+							    
+								<img src="images/a3.JPG">
+								</div>
+								<div class="item-content-items-sp">
+								<h3>博客</h3>
+								<span>因为之前有过和同学组团搭建博客的经验，这次的的搭建我更加注重...，我因为..选择了使用...，实现了...，非常便于我的日常维护</span>
+								</div>
+								</div>
+							</li>
+							<li>
+							<div class="item-content-itemA">
+							    
+							    <div class="item-content-items-img">
+								<div class="item-content-items-mask2"></div>
+							    
+								<img src="images/IMG_8133.JPG">
+								</div>
+								<div class="item-content-items-sp">
+								<h3>美食网站</h3>
+								<span>我做了 XX 项目重构，用了 XX 技术方案，克服了 XX 的困难，最终让 XX 这类需求变更可以短平快的被消化，极速研发、快速上线、且数据采集也做到了标准化，研发成本大大降低，数据积累增长迅速，比如 XX ，最后在 XX 产品线中开始推广。</span>
+								</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+		</div>
+		<div class="section section-5 swiper-slide">
+				<div class="container">
+					<div class="callMe">
+
+						<span>联系方式/社交账号</span>
+						<ul>
+							<li>QQ：752465049</li>
+							<li>邮箱：752465049@qq.com</li>
+							<li>电话：17611005722</li>
+						</ul>
+					</div>
+				</div>
 		</div>
 	</div>
-	<ul class="section-btn">
-      <li class="cur"></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    <div class="go-btn">
-    	<img src="images/jiantou_img.png">
-    </div>
-</script>
+</div>
+<div class="swiper-pagination"></div>
+<script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'vertical',
+    loop: true,
+    keyboardControl : true,
+    mousewheelControl : true,
+    pagination : '.swiper-pagination',
+    paginationClickable :true,
+    paginationElement : 'li',
+  })        
+  </script>
 </body>
 </html>

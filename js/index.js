@@ -208,3 +208,13 @@ $(document).ready(function(){
       this.title=this.myTitle;
     })
  })
+/*第四版*/
+$(function(){
+  var index=$('.item-content-itemA').parent().index();
+    $('.item-content-itemA').mouseenter(function(){
+       $(this).find("span").eq(index).slideDown().parent().prev().find('div').show();
+    })
+    $('.item-content-itemA').mouseleave(function(){
+       $(this).find("span").eq(index).slideUp().parent().prev().find('div').hide(); 
+    })
+})
