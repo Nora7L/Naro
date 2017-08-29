@@ -556,7 +556,9 @@ li{list-style: none;trf}
     width: 300px;
     bottom: 80px;
   }
-
+.myData-my span{
+  color: #977c00;
+}
   .about-me {
     width: 300px;
     background-color:transparent;
