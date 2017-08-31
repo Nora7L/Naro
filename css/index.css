@@ -417,6 +417,9 @@ li{list-style: none;trf}
    cursor: pointer;
     font-family:"幼圆";
  }
+ .item-content a{
+  color: black;
+ }
   .item-content .item-content-items li span{
     display: inline-block;
     color: #666666;
@@ -444,7 +447,7 @@ li{list-style: none;trf}
     height: 100%;
     width: 100%;
   }
- .item-content .item-content-items li .item-content-items-sp{
+ .item-content .item-content-items li .item-content-items-sp {
      background-color:#fff;
      position: absolute;
      z-index: 2;
